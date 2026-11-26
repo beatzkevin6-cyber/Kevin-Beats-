@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kevin Beats — instrumentales Amapiano, Afrobeat, Dancehall et Shatta." />
+  <title>Kevin Beats — Beat Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Kevin Beats accueil"><span class="brand-mark">K</span><span>KEVIN BEATS</span></a>
+    <nav aria-label="Navigation principale"><a href="#beats">Instrumentaux</a><a href="#licences">Licences</a><a href="#contact">Contact</a></nav>
+    <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">Panier <span id="cartCount">0</span></button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Official beat store</p>
+        <h1>TON PROCHAIN<br><em>SON.</em></h1>
+        <p class="hero-text">Instrumentales premium pour artistes ambitieux. Trouve ton vibe et fais entendre ta voix.</p>
+        <a class="primary-button" href="#beats">Explorer les beats <span>→</span></a>
+      </div>
+      <div class="hero-visual" aria-label="Logo Kevin Beats"><div class="vinyl"><div class="vinyl-ring"></div><div class="vinyl-label">KB</div></div><span class="mono-line">ON THE BEATS</span></div>
+    </section>
+    <section class="catalog" id="beats">
+      <div class="section-heading"><div><p class="eyebrow">Dernières productions</p><h2>Instrumentaux</h2></div><div class="filters" id="filters" aria-label="Filtrer les instrumentaux"><button class="active" data-filter="Tous">Tous</button><button data-filter="Amapiano">Amapiano</button><button data-filter="Afrobeat">Afrobeat</button><button data-filter="Dancehall">Dancehall</button><button data-filter="Shatta">Shatta</button></div></div>
+      <div class="beat-grid" id="beatGrid"></div>
+    </section>
+    <section class="licenses" id="licences">
+      <div class="section-heading"><div><p class="eyebrow">Choisis ton format</p><h2>Licences</h2></div></div>
+      <div class="license-grid">
+        <article class="license-card"><p class="license-type">Basique</p><h3>$10</h3><p>MP3 formaté · Usage personnel · 1 projet</p><a href="#beats">Choisir</a></article>
+        <article class="license-card featured"><span class="popular">Populaire</span><p class="license-type">Premium</p><h3>$20</h3><p>MP3 + WAV · Diffusion élargie · Jusqu'à 100k streams</p><a href="#beats">Choisir</a></article>
+        <article class="license-card"><p class="license-type">Exclusif</p><h3>$40</h3><p>WAV + stems · Usage illimité · Droits exclusifs</p><a href="#beats">Choisir</a></article>
+      </div>
+    </section>
+    <section class="contact" id="contact"><div><p class="eyebrow">Un projet sur mesure ?</p><h2>Faisons vibrer<br>ton prochain titre.</h2></div><a class="outline-button" href="mailto:beatzkevin6@gmail.com">beatzkevin6@gmail.com</a></section>
+  </main>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true"><div class="cart-header"><h2>Ton panier</h2><button id="closeCart" aria-label="Fermer">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-footer"><div><span>Total</span><strong id="cartTotal">$0</strong></div><button id="checkoutButton" class="checkout-button">Continuer vers le paiement</button></div></aside>
+  <div class="overlay" id="overlay"></div>
+  <footer><a class="brand" href="#"><span class="brand-mark">K</span><span>KEVIN BEATS</span></a><p>© 2026 Kevin Beats. Tous droits réservés.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
